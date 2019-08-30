@@ -170,7 +170,44 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <ol>
+<li>首先安装Git</li>
+</ol>
+<ol start="2">
+<li><p>node的安装</p>
+<p>输入：npm -v，如果输出npm版本号，则node安装成功；</p>
+<p>npm是nodejs的包管理器，用于node插件管理，包括安装、卸载和管理依赖等；</p>
+</li>
+<li><p>npm安装cnpm</p>
+<p>cnpm：淘宝的npm镜像，旨在减少对npm国外服务器的依赖；</p>
+<p>安装命令：npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a></p>
+</li>
+<li><p>安装hexo</p>
+<p>cnpm install -g hexo-cli<br>hexo init<br>hexo s 启动</p>
+</li>
+<li><p>创建文章</p>
+<p>Hexo n “my first blog”<br>打开编写<br>编写完<br>Hexo clean<br>Hexo g<br>Hexo s </p>
+</li>
+<li><p>部署到GitHub</p>
+<p>cnpm install –save hexo-deployer-git（安装github插件）</p>
+<p>6.1新建GitHub仓库</p>
+<p>6.2配置hexo的config.yml文件</p>
+<p>​    配置_config.yml<br>​    Type: git<br>​    repo:  <a href="https://github.com/JialeDon/JialeDon.github.io.git" target="_blank" rel="noopener">https://github.com/JialeDon/JialeDon.github.io.git</a><br>​    branch: master</p>
+<p>部署到远端：hexo d  发现仓库添加有文件</p>
+</li>
+<li><p>更换博客主题</p>
+<p>更换主题：<br>git clone <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia<br>更改_config.yml<br>Hexo clean<br>Hexo d推到远端</p>
+</li>
+<li><p>通过github仓库部署到个人域名</p>
+<p>创建CNAME文件：感谢楼主。补充一点，部署网站之前，CNAME文件放在source文件夹下，这样可以防止CNAME文件被自动删除</p>
+</li>
+<li><p>主题的配置</p>
+<p>比特虫在线制作ico图标，更改layout/head.ejs</p>
+<p>添加统计：<a href="https://www.jianshu.com/p/c9f83d5b893a" target="_blank" rel="noopener">https://www.jianshu.com/p/c9f83d5b893a</a></p>
+<p>更换主题：<br>git clone <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia<br>更改_config.yml<br>Hexo clean<br>Hexo d推到远端</p>
+</li>
+</ol>
+
       
 
       
@@ -178,6 +215,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">hexo yilia</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -315,6 +363,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">hexo yilia</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
