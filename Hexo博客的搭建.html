@@ -16,13 +16,13 @@
 <meta property="og:site_name" content="Don&#39;s Blog">
 <meta property="og:description" content="本篇文章简述hexo静态博客的搭建，更换yilia主题和主题的简单配置">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/Hexo博客的搭建.htm/F:%5Cblog%5Csource_posts%5CHexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA%5Cdeploy.png">
-<meta property="og:image" content="http://yoursite.com/Hexo博客的搭建.htm/F:%5Cblog%5Csource_posts%5CHexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA%5Crepo.png">
-<meta property="og:updated_time" content="2019-09-01T07:38:24.801Z">
+<meta property="og:image" content="http://yoursite.com/Hexo博客的搭建.htm/deploy.png">
+<meta property="og:image" content="http://yoursite.com/Hexo博客的搭建.htm/repo.png">
+<meta property="og:updated_time" content="2019-09-01T12:38:43.882Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo博客的搭建">
 <meta name="twitter:description" content="本篇文章简述hexo静态博客的搭建，更换yilia主题和主题的简单配置">
-<meta name="twitter:image" content="http://yoursite.com/Hexo博客的搭建.htm/F:%5Cblog%5Csource_posts%5CHexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA%5Cdeploy.png">
+<meta name="twitter:image" content="http://yoursite.com/Hexo博客的搭建.htm/deploy.png">
   
     <link rel="alternative" href="/atom.xml" title="Don&#39;s Blog" type="application/atom+xml">
   
@@ -191,20 +191,19 @@
         <h4 id="本篇文章简述hexo静态博客的搭建，更换yilia主题和主题的简单配置"><a href="#本篇文章简述hexo静态博客的搭建，更换yilia主题和主题的简单配置" class="headerlink" title="本篇文章简述hexo静态博客的搭建，更换yilia主题和主题的简单配置"></a>本篇文章简述hexo静态博客的搭建，更换yilia主题和主题的简单配置</h4><a id="more"></a>
 
 <h2 id="首先安装Git"><a href="#首先安装Git" class="headerlink" title="首先安装Git"></a>首先安装Git</h2><p>Git是目前世界最先进的分布式版本控制系统，windows上安装Git可以直接从<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">官网</a>直接下载安装程序；</p>
-<h2 id="Node的安装"><a href="#Node的安装" class="headerlink" title="Node的安装"></a>Node的安装</h2><p>Node.js是一个基于Chrome V8引擎的JavaScript运行环境；node的安装也可以从<a href="https://nodejs.org/en/" target="_blank" rel="noopener">官网</a>直接下载安装程序，推荐选择版本LTS（长期支持版）；<br>​验证安装是否成功：   </p>
-<ol>
-<li>新建编写博客的文件夹，打开文件夹；单击右键打开 Git bash here；</li>
-<li>输入：npm -v，如果输出npm版本号，则node安装成功；</li>
-</ol>
-<p>npm是node.js的包管理器，用于node插件管理，包括安装、卸载和管理依赖等；</p>
+<h2 id="Node的安装"><a href="#Node的安装" class="headerlink" title="Node的安装"></a>Node的安装</h2><p>Node.js是一个基于Chrome V8引擎的JavaScript运行环境；node的安装也可以从<a href="https://nodejs.org/en/" target="_blank" rel="noopener">官网</a>直接下载安装程序，推荐选择版本LTS（长期支持版）；<br>​验证安装是否成功：<br>1.新建编写博客的文件夹，打开文件夹；单击右键打开 Git bash here；<br>2.输入：npm -v，如果输出npm版本号，则node安装成功；<br>npm是node.js的包管理器，用于node插件管理，包括安装、卸载和管理依赖等；</p>
 <h2 id="Npm安装cnpm"><a href="#Npm安装cnpm" class="headerlink" title="Npm安装cnpm"></a>Npm安装cnpm</h2><p>cnpm是淘宝的npm镜像，目的是减少对npm国外服务器的依赖；<br>​安装命令：npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a></p>
 <h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>打开Git bash：<br>1.安装hexo客户端：cnpm install -g hexo-cli；<br>2.hexo初始化：hexo init；<br>3.启动hexo博客：hexo s；<br>  通过访问弹出的本地地址，即可访问博客页面；到此，hexo博客的安装已经完成，下面我们将它部署到个人的Github仓库，这样我们可以通过网址直接访问；</p>
-<h2 id="部署到Github"><a href="#部署到Github" class="headerlink" title="部署到Github"></a>部署到Github</h2><p>1.首先，Git bash 安装guthub插件：cnpm install –save hexo-deployer-git；<br>2.新建GitHub仓库，Repository name应这样填写；<br>  <img src="/Hexo博客的搭建.htm/F:%5Cblog%5Csource_posts%5CHexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA%5Cdeploy.png" alt><br>然后点击Create repository创建仓库，并复制当前仓库的地址；<br>3.修改_config.yml 配置文件；<br>  <img src="/Hexo博客的搭建.htm/F:%5Cblog%5Csource_posts%5CHexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA%5Crepo.png" alt><br>   repo：是你的仓库地址<br>4.打开Git bash；<br>  输入：hexo clean清理缓存；hexo d推到Github服务,这样你的仓库中就会多了很多文件，并且输入你的仓库地址可以直接登录hexo博客</p>
+<h2 id="部署到Github"><a href="#部署到Github" class="headerlink" title="部署到Github"></a>部署到Github</h2><p>1.首先，Git bash 安装guthub插件：cnpm install –save hexo-deployer-git；<br>2.新建GitHub仓库，Repository name应这样填写；  </p>
+<p>  <img src="/Hexo博客的搭建.htm/deploy.png" alt="Repository name">  </p>
+<p>然后点击Create repository创建仓库，并复制当前仓库的地址；<br>3.修改_config.yml 配置文件；</p>
+<p>  <img src="/Hexo博客的搭建.htm/repo.png" alt="_config.yml"></p>
+<p>   repo：是你的仓库地址<br>4.打开Git bash；<br>  输入：hexo clean清理缓存；hexo d推到Github服务,这样你的仓库中就会多了很多文件，并且输入你的仓库地址可以直接登录hexo博客</p>
 <h2 id="通过Github仓库部署到个人域名"><a href="#通过Github仓库部署到个人域名" class="headerlink" title="通过Github仓库部署到个人域名"></a>通过Github仓库部署到个人域名</h2><p>下面是将博客地址更改为你的个人域名，首先通过ping命令获取你的博客IP地址，并且通过域名控制器设置你的记录值，这个记录值即为你的博客IP地址；<br>​在你的博客文件夹下/source/ 创建CNAME文件，文件输入你的域名地址，保存并删除文件后缀，最后清理缓存并上传；</p>
 <h2 id="更改博客主题"><a href="#更改博客主题" class="headerlink" title="更改博客主题"></a>更改博客主题</h2><ol>
 <li>首先下载hexo主题，将主题放在themes文件下内，修改_config.yml文件，更改主题名字即可，更改完记得清楚缓存，并推到远端服务器；</li>
 <li>添加访问量统计：卜蒜子；</li>
-<li>创建新文章：hexo new  “my first blog”，新文件创建在source / _ posts 目录下，推荐使用Atom、Typora等Markdown编辑工具编写博客，最后记得保存，清理缓存（hexo clean）并上传（hexo d）；</li>
+<li>创建新文章：hexo new  “my first blog”，新文件创建在source / _ posts 目录下，推荐使用Atom、Typora等Markdown编辑工具编写博客，最后记得保存，清理缓存(hexo clean)并上传(hexo d)；</li>
 <li>置顶文章设置：<a href="http://dongshuyan.com/" target="_blank" rel="noopener">http://dongshuyan.com</a>；</li>
 </ol>
 
