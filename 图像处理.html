@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: Resnet | Don&#39;s Blog</title>
+  <title>图像处理 | Don&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Don&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/tags/Resnet/index.html">
+  <meta name="description" content="图像处理常用的python库 scikit image numpy图像本质是一个包含数据点像素的标准numpy数组。因此，通过使用基本的numpy操作，如切片、屏蔽和花式索引（https://www.jianshu.com/p/743b3bb340f6），可以修改图像的像素值。可以使用skimage加载图像，并使用matplotlib显示图像。 scipyscipy是Python的另一个核心科学模">
+<meta name="keywords" content="image process">
+<meta property="og:type" content="article">
+<meta property="og:title" content="图像处理">
+<meta property="og:url" content="http://yoursite.com/图像处理.html">
 <meta property="og:site_name" content="Don&#39;s Blog">
+<meta property="og:description" content="图像处理常用的python库 scikit image numpy图像本质是一个包含数据点像素的标准numpy数组。因此，通过使用基本的numpy操作，如切片、屏蔽和花式索引（https://www.jianshu.com/p/743b3bb340f6），可以修改图像的像素值。可以使用skimage加载图像，并使用matplotlib显示图像。 scipyscipy是Python的另一个核心科学模">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-10-14T04:29:29.151Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Don&#39;s Blog">
+<meta name="twitter:title" content="图像处理">
+<meta name="twitter:description" content="图像处理常用的python库 scikit image numpy图像本质是一个包含数据点像素的标准numpy数组。因此，通过使用基本的numpy操作，如切片、屏蔽和花式索引（https://www.jianshu.com/p/743b3bb340f6），可以修改图像的像素值。可以使用skimage加载图像，并使用matplotlib显示图像。 scipyscipy是Python的另一个核心科学模">
   
     <link rel="alternative" href="/atom.xml" title="Don&#39;s Blog" type="application/atom+xml">
   
@@ -154,64 +159,112 @@
           </div>
           <div id="js-content" class="content-ll">
             
-  
-  
+<article id="post-图像处理" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/ResNet.html" class="archive-article-date">
-  	<time datetime="2019-09-20T03:07:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-20</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/ResNet.html">ResNet简介</a>
+    <h1 class="article-title" itemprop="name">
+      图像处理
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/图像处理.html" class="archive-article-date">
+  	<time datetime="2019-10-14T03:23:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="图像处理常用的python库"><a href="#图像处理常用的python库" class="headerlink" title="图像处理常用的python库"></a>图像处理常用的python库</h3><ol>
+<li>scikit image</li>
+<li>numpy<br>图像本质是一个包含数据点像素的标准numpy数组。因此，通过使用基本的numpy操作，如切片、<br>屏蔽和花式索引（<a href="https://www.jianshu.com/p/743b3bb340f6），可以修改图像的像素值。" target="_blank" rel="noopener">https://www.jianshu.com/p/743b3bb340f6），可以修改图像的像素值。</a><br>可以使用skimage加载图像，并使用matplotlib显示图像。</li>
+<li>scipy<br>scipy是Python的另一个核心科学模块，类似于Numpy，可用于基本的图像处理和处理任务。<br>特别是子模块scipy.ndimage。提供在n维NumPy数组上操作的函数。</li>
+<li>PIL/ pillow<br>PIL(Python Imaging Library)是Python编程语言的一个免费库，它支持打开、操作和保存许<br>多不同的图像文件格式。幸运的是，有Pillow，这是PIL的一个积极开发的分支，更容易安装，<br>支持所有主要的操作系统，并支持Python3。该库包含基本的图像处理功能，包括点操作、使用<br>一组内置卷积核进行过滤和颜色空间转换。</li>
+<li>opencv</li>
+<li>simpleCV</li>
+<li>mahotas<br>Mahotas是另一个用于Python的计算机视觉和图像处理库。它包含传统的图像处理功能，如滤波<br>和形态学操作，以及更现代的计算机视觉功能，用于特征计算，包括兴趣点检测和局部描述符。<br>该接口是用Python编写的，适合于快速开发，但是算法是用c++实现的，并且针对速度进行了调<br>优。Mahotas库速度快，代码简洁，甚至具有最小的依赖性。</li>
+<li>simpleITK<br>ITK或Insight Segmentation and Registration Toolkit是一个开源的跨平台系统，为开发<br>人员提供了一套广泛的图像分析软件工具。其中，SimpleITK是构建在ITK之上的一个简化层，旨<br>在促进其在快速原型设计、教育和解释语言中的使用。SimpleITK是一个图像分析工具包，包含大<br>量支持一般过滤操作、图像分割和注册的组件。SimpleITK本身是用c++编写的，但是可以用于包<br>括Python在内的许多编程语言。</li>
+<li>pgmagick<br>它提供了一个健壮而高效的工具和库集合，支持以88种主要格式(包括重要格式，如DPX、GIF、<br> JPEG、JPEG-2000、PNG、PDF、PNM和TIFF)读取、写入和操作图像。</li>
+<li>pycairo<br>Pycairo是cairo图形库的一组python绑定。Cairo是一个用于绘制矢量图形的2D图形库。矢量图<br>形很有趣，因为它们在调整大小或转换时不会失去清晰度。Pycairo是cairo的一组绑定，可用于<br>从Python调用cairo命令。</li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">深度学习</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Resnet</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">image process</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/Anaconda命令.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Anaconda命令</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -246,9 +299,9 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
